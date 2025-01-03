@@ -62,8 +62,7 @@ https://prasadingleworks.netlify.app/
 ---
 
 ## 🧰 **Tech Stack**
-- **Frontend**: HTML, CSS, JavaScript
-- **Framework**: React.js
+- **Frontend**: React.js (JavaScript, CSS, HTML)
 - **Tooling**: Vite, ESLint
 
 ---
