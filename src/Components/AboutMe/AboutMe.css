@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Roboto+Slab:wght@400;700&display=swap');
+
+.about-me {
+  position: relative;
+  padding: 2rem;
+  background: linear-gradient(
+    90deg,
+    rgba(109, 170, 235, 0.66),
+    rgba(227, 143, 244, 0.65),
+    rgba(132, 248, 188, 0.65)
+  );
+  background-size: 300% 100%;
+  border-radius: 20px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.36);
+  max-width: 800px;
+  margin: 2rem auto; /* Centers section horizontally */
+  text-align: center;
+  z-index: 10;
+  overflow: hidden;
+  animation: gradientAnimation 6s ease-in-out infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.about-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  animation: fadeInDown 1s ease-in-out;
+  color: rgb(0, 0, 0);
+  margin-bottom: 1rem;
+  font-family: 'Roboto Slab', serif;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about-title::after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 4px;
+  background-color: #007bff;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: slideIn 1.5s ease-in-out;
+}
+
+@keyframes slideIn {
+  from {
+    width: 0;
+  }
+  to {
+    width: 50px;
+  }
+}
+
+.about-description {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: rgb(0, 0, 0);
+  font-family: 'Merriweather', serif;
+  margin-top: 1rem;
+}
+
+.about-description strong {
+  color: rgb(0, 89, 255);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .about-me {
+    padding: 1.5rem;
+    max-width: 90%;  /* Allow for more space on smaller screens */
+  }
+
+  .about-title {
+    font-size: 2rem;  /* Make the title smaller on smaller screens */
+  }
+
+  .about-description {
+    font-size: 1rem;  /* Adjust the description font size */
+  }
+}
+
+@media (max-width: 480px) {
+  .about-me {
+    padding: 1rem;
+    max-width: 95%;
+  }
+
+  .about-title {
+    font-size: 1.8rem;  /* Further reduce title size on small screens */
+  }
+
+  .about-description {
+    font-size: 0.9rem;  /* Further reduce description font size */
+  }
+}

@@ -1,0 +1,202 @@
+/* Container for Skills & Tools */
+.skills-tools-container {
+  padding: 2rem;
+  background-color: #0d1124;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.skills-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.header-line {
+  flex: 1;
+  height: 2px;
+  background-color: #7c3aed;
+  margin: 0 1rem;
+}
+
+h2 {
+  color: #fff;
+  font-size: 1.75rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+strong {
+  color: yellow;
+}
+
+/* Slider Containers */
+.skills-slider,
+.tools-slider {
+  overflow: hidden;
+  position: relative;
+  margin: 2rem 0;
+  background-color: rgb(77, 85, 160);
+  padding: 1rem 0;
+  border-radius: 10px;
+}
+
+.slider-track {
+  display: flex;
+  gap: 2rem;
+  white-space: nowrap;
+}
+
+.slider-item {
+  flex: 0 0 auto;
+  padding: 1rem;
+  font-size: 1.1rem;
+  color: #fff;
+  background-color: #25213b;
+  border: 1px solid #25213b;
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+  transition: transform 0.3s, background-color 0.3s, border-color 0.3s;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 90px;
+  height: 80px;
+}
+
+.slider-item:hover {
+  transform: scale(1.1);
+  background-color: #7c3aed;
+  border-color: #7c3aed;
+  box-shadow: 0 4px 10px rgba(124, 58, 237, 0.4);
+}
+
+.slider-item:active {
+  transform: scale(1);
+}
+
+/* Add specific styles for the icons */
+.slider-item-icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.slider-item-name {
+  font-size: 1rem;
+}
+
+/* Animation for sliding effect */
+@keyframes slide-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes slide-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+/* Apply specific animation to Tools Slider */
+.tools-slider .slider-track {
+  animation: slide-right 15s linear infinite; /* Smooth infinite sliding */
+}
+
+/* Apply specific animation to Skills Slider */
+.skills-slider .slider-track {
+  animation: slide-left 15s linear infinite; /* Smooth infinite sliding */
+}
+
+/* Responsive Styles */
+
+/* For screens less than 780px */
+@media (max-width: 780px) {
+  .skills-slider .slider-track {
+    animation: slide-left 10s linear infinite; /* Faster scrolling */
+  }
+
+  .tools-slider .slider-track {
+    animation: slide-right 10s linear infinite; /* Faster scrolling */
+  }
+
+  .slider-item {
+    font-size: 0.9rem; /* Smaller font size */
+    width: 70px; /* Smaller width */
+    height: 60px; /* Smaller height */
+    padding: 0.5rem; /* Reduced padding */
+  }
+
+  .slider-item-icon {
+    font-size: 2rem; /* Smaller icon size */
+    margin-bottom: 0.4rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .slider-track {
+    gap: 1rem;
+  }
+}
+
+/* For screens less than 400px */
+/* Responsive Styles */
+
+/* For screens less than 400px */
+@media (max-width: 400px) {
+  .skills-tools-container {
+    padding: 1rem; /* Reduced padding for smaller screens */
+  }
+
+  .skills-header {
+    flex-direction: column; /* Stack elements for smaller screens */
+    margin-bottom: 1.5rem;
+  }
+
+  .header-line {
+    margin: 0.5rem 0; /* Reduced spacing for header lines */
+  }
+
+  h2 {
+    font-size: 1.3rem; /* Reduced font size */
+    text-align: center;
+  }
+
+  .skills-slider .slider-track,
+  .tools-slider .slider-track {
+    gap: 0.5rem; /* Reduced gap between items */
+    animation-duration: 5s; /* Even faster scrolling */
+  }
+
+  .slider-item {
+    font-size: 0.8rem; /* Further reduced font size */
+    width: 50px; /* Reduced width */
+    height: 45px; /* Reduced height */
+    padding: 0.3rem; /* Reduced padding */
+  }
+
+  .slider-item-icon {
+    font-size: 1.5rem; /* Adjusted icon size */
+    margin-bottom: 0.2rem;
+  }
+
+  .slider-item-name {
+    font-size: 0.7rem; /* Smaller text size for item names */
+  }
+}
+
+
+
