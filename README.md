@@ -69,9 +69,9 @@ https://prasadingleworks.netlify.app/
 
 ## 📬 **Contact**
 Feel free to reach out for collaborations or inquiries:  
-📧 Email: prasadingle25904@gmail.com
-🌐 Portfolio: https://prasadingleworks.netlify.app/ 
-🔗 LinkedIn: https://www.linkedin.com/in/prasad-ingle-639731261/
+- 📧 Email: prasadingle25904@gmail.com
+- 🌐 Portfolio: https://prasadingleworks.netlify.app/ 
+- 🔗 LinkedIn: https://www.linkedin.com/in/prasad-ingle-639731261/
 
 ---
 
