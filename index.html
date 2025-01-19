@@ -2,16 +2,34 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" href="https://img.icons8.com/ios/452/p.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Prasad's Portfolio</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://img.icons8.com/ios/452/p.png" type="image/png" />
+
+    <!-- Preload Critical Resources -->
+    <link rel="preload" as="image" href="/assets/ProfImgwithoutBackgroung.png" />
+    <link rel="preload" as="video" href="/assets/hero2.mp4" />
+
+    <!-- External Fonts and Icons -->
     <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-      /> 
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/kNV7U+P+DoFfF++LSZt8c5a3LVdeLDMpo6QFqdDXe83Z/2gtH58t5E4ZjL2yq9w95WXjkGH2ji3yA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Add Style Sheets -->
+    <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
+    <!-- React Root -->
     <div id="root"></div>
+
+    <!-- Main JavaScript File -->
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

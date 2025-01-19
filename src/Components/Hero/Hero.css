@@ -112,6 +112,50 @@
   margin-left: 5px; /* Spacing between text and cursor */
 }
 
+.hire-me-btn {
+  padding: 12px 30px;
+  background: linear-gradient(45deg, #8e44ad, #3498db);
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+.hire-me-btn i {
+  margin-right: 10px; /* Spacing between icon and text */
+  font-size: 1.5rem;
+  animation: bounce 2s infinite; /* Icon animation */
+}
+
+.hire-me-btn:hover {
+  background: linear-gradient(45deg, #3498db, #8e44ad);
+  transform: translateY(-3px); /* Slight lift on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.hire-me-btn:active {
+  transform: translateY(2px); /* Slight press-down effect */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
 @keyframes blink {
   50% {
     opacity: 0;

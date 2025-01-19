@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import './Hero.css';
 import Back from './../../assets/hero2.mp4';
-import Back2 from './../../assets/hero1.mp4';
 import MyImg from './../../assets/ProfImgwithoutBackgroung.png';
 
 const Hero = () => {
   const titles = [
     'Software Developer',
     'Data Scientist',
+    'DevOps',
     'Problem Solver',
     'Tech Enthusiast',
   ];
@@ -65,6 +65,12 @@ const Hero = () => {
           >
             <i className="fa fa-download" aria-hidden="true"></i> Download My Resume
           </button>
+          <button
+              className="hire-me-btn"
+              onClick={() => (window.location.href = '/#contact')}>
+              <i className="fa fa-paper-plane" aria-hidden="true"></i> Hire Me
+          </button>
+
         </div>
         <div className="hero-contentRight">
           <img src={MyImg} alt="My Image" />

@@ -277,6 +277,21 @@ textarea.input-field {
   transform: scale(1.05);
 }
 
+.suggestion-text {
+  font-size: 0.8rem;
+  color: #888;
+  margin-top: 0.3rem;
+  display: block;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+input:focus ~ .suggestion-text,
+textarea:focus ~ .suggestion-text {
+  color: #007bff;
+  font-weight: bold;
+}
+
+
 /* Responsive Design */
 @media (max-width: 1200px) {
   .leftContent {
