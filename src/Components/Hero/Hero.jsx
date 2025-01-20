@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import './Hero.css';
 import Back from './../../assets/hero2.mp4';
-import MyImg from './../../assets/ProfImgwithoutBackgroung.png';
+import PlaceholderImage from './../../assets/bgImgLoading.webp'; // Placeholder WebP Image
+import MyImg from './../../assets/ProfImgwithoutBackgroung.webp';
 
 const Hero = () => {
   const titles = [
@@ -15,6 +16,7 @@ const Hero = () => {
   const [titleIndex, setTitleIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
+  const [isVideoLoaded, setIsVideoLoaded] = useState(false); // Track video load state
 
   useEffect(() => {
     const typingSpeed = isDeleting ? 50 : 150;
@@ -45,10 +47,33 @@ const Hero = () => {
 
   return (
     <section className="hero">
-      <video className="hero-video" autoPlay loop muted>
-        <source src={Back} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+      {/* Background Image Placeholder */}
+      <div
+        className="hero-video-placeholder"
+        style={{
+          backgroundImage: `url(${PlaceholderImage})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          filter: isVideoLoaded ? 'none' : 'blur(5px)',
+          transition: 'filter 0.5s ease-in-out',
+        }}
+      >
+        {/* Lazy Loaded Video */}
+        <video
+          className="hero-video"
+          autoPlay
+          loop
+          muted
+          onLoadedData={() => setIsVideoLoaded(true)}
+          style={{
+            opacity: isVideoLoaded ? 1 : 0,
+            transition: 'opacity 0.5s ease-in-out',
+          }}
+        >
+          <source src={Back} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
       <div className="hero-content">
         <div className="hero-contentLeft">
           <h1>Hi👋, I'm Prasad Ingle</h1>
@@ -66,11 +91,11 @@ const Hero = () => {
             <i className="fa fa-download" aria-hidden="true"></i> Download My Resume
           </button>
           <button
-              className="hire-me-btn"
-              onClick={() => (window.location.href = '/#contact')}>
-              <i className="fa fa-paper-plane" aria-hidden="true"></i> Hire Me
+            className="hire-me-btn"
+            onClick={() => (window.location.href = '/#contact')}
+          >
+            <i className="fa fa-paper-plane" aria-hidden="true"></i> Hire Me
           </button>
-
         </div>
         <div className="hero-contentRight">
           <img src={MyImg} alt="My Image" />
