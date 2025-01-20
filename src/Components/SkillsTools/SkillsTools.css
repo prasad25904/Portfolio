@@ -178,23 +178,23 @@ strong {
   .skills-slider .slider-track,
   .tools-slider .slider-track {
     gap: 0.5rem; /* Reduced gap between items */
-    animation-duration: 5s; /* Even faster scrolling */
+    animation-duration: 8s; /* Even faster scrolling */
   }
 
   .slider-item {
-    font-size: 0.8rem; /* Further reduced font size */
-    width: 50px; /* Reduced width */
-    height: 45px; /* Reduced height */
+    font-size: 0.6rem; /* Further reduced font size */
+    width: 40px; /* Reduced width */
+    height: 35px; /* Reduced height */
     padding: 0.3rem; /* Reduced padding */
   }
 
   .slider-item-icon {
-    font-size: 1.5rem; /* Adjusted icon size */
+    font-size: 1.2rem; /* Adjusted icon size */
     margin-bottom: 0.2rem;
   }
 
   .slider-item-name {
-    font-size: 0.7rem; /* Smaller text size for item names */
+    font-size: 0.5rem; /* Smaller text size for item names */
   }
 }
 

@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import './Certifications.css';
-import  AbInitio from './../../assets/certificates/Barclays-AbInitio.jpg';
-import  DataScience from './../../assets/certificates/WhatIsDataScience.jpg';
-import  DeepLearning from './../../assets/certificates/CertificateNvdiaDeepLearning.jpg';
+import  AbInitio from './../../assets/certificates/Barclays-AbInitio.webp';
+import  DataScience from './../../assets/certificates/WhatIsDataScience.webp';
+import  DeepLearning from './../../assets/certificates/CertificateNvdiaDeepLearning.webp';
+import  ToolsForDs from './../../assets/certificates/ToolsForDS.webp';
+import  DataScienceMethodology from './../../assets/certificates/DataScienceMethodology.webp';
+import  Devops1 from './../../assets/certificates/Devops1.webp';
 
 
 const Certifications = () => {
@@ -23,6 +26,21 @@ const Certifications = () => {
       id: 3,
       title: 'Nvdia- Fundamentals of Deep Learning',
       imageUrl: DeepLearning,
+    },
+    {
+      id: 4,
+      title: 'Tools for Data Science',
+      imageUrl: ToolsForDs,
+    },
+    {
+      id: 5,
+      title: 'Data Science Methodology',
+      imageUrl: DataScienceMethodology,
+    },
+    {
+      id: 6,
+      title: 'Introduction to DevOps',
+      imageUrl: Devops1,
     },
     
   ];

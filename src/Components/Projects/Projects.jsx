@@ -1,19 +1,18 @@
-// src/Components/Projects/Projects.jsx
-import React from 'react';
+import React, { useState } from 'react';
 import './Projects.css';
 
 // Import images
-import wingtipsImg from './../../assets/projectsImg/Wingtips.png';
-import movieBookingImg from './../../assets/projectsImg/movie_booking_system.png';
-import atomsAndCompoundsImg from './../../assets/projectsImg/atoms_and_compounds.png';
-import hospitalPrioritizationImg from './../../assets/projectsImg/hospital_prioritization.png';
+import wingtipsImg from './../../assets/projectsImg/Wingtips.webp';
+import movieBookingImg from './../../assets/projectsImg/movie_booking_system.webp';
+import atomsAndCompoundsImg from './../../assets/projectsImg/atoms_and_compounds.webp';
+import hospitalPrioritizationImg from './../../assets/projectsImg/hospital_prioritization.webp';
 
 const projectsData = [
   {
     title: "WingTips - User Guide for Air Travel",
     image: wingtipsImg,
     description: "A comprehensive guide aimed at educating air travelers for a seamless experience. This project provides tips and insights into booking tickets, preparing for travel, navigating airports, and ensuring a stress-free journey. It features interactive components and user-friendly design to cater to both novice and experienced travelers.",
-    tools: ["React", "NodeJs", "CSS", "Express","MySQL"],
+    tools: ["React", "NodeJs", "CSS", "Express", "MySQL"],
   },
   {
     title: "Movie Booking System",
@@ -36,13 +35,37 @@ const projectsData = [
 ];
 
 const Projects = () => {
+  const [searchQuery, setSearchQuery] = useState("");
+
+  // Filter projects based on search query
+  const filteredProjects = projectsData.filter((project) =>
+    project.tools.some((tool) =>
+      tool.toLowerCase().includes(searchQuery.toLowerCase())
+    )
+  );
+
   return (
     <section id="projects" className="projects">
-      <h2 className='projectTitle'>Projects</h2>
+      <h2 className="projectTitle">Projects</h2>
+      {/* Search Box */}
+      <div className="search-container">
+        <input
+          type="text"
+          placeholder="Search by tools (e.g., React, Java)"
+          value={searchQuery}
+          onChange={(e) => setSearchQuery(e.target.value)}
+          className="search-box"
+        />
+      </div>
+      {/* Project Cards */}
       <div className="projects-container">
-        {projectsData.map((project, index) => (
+        {filteredProjects.map((project, index) => (
           <div key={index} className="project-card">
-            <img src={project.image} alt={`${project.title} thumbnail`} className="project-image" />
+            <img
+              src={project.image}
+              alt={`${project.title} thumbnail`}
+              className="project-image"
+            />
             <h3 className="project-title">{project.title}</h3>
             <p className="project-description">{project.description}</p>
             <div className="project-tools">
@@ -50,6 +73,9 @@ const Projects = () => {
             </div>
           </div>
         ))}
+        {filteredProjects.length === 0 && (
+          <p className="no-results">No projects found for the entered tool.</p>
+        )}
       </div>
     </section>
   );
