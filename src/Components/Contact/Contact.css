@@ -10,7 +10,7 @@
 .section-subtitle {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #333;
+  color: var(--text-color);
   text-align: center;
   position: relative;
   animation: fadeInDown 1s ease-in-out;
@@ -19,7 +19,7 @@
 .section-title {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #333;
+  color: var(--text-color);
   text-align: center;
   position: relative;
   animation: fadeInDown 1s ease-in-out;
@@ -61,7 +61,7 @@
 /* Section Text Styling */
 .section-text {
   font-size: 1.1rem;
-  color: #555;
+  color: var(--text-color);
   text-align: center;
   line-height: 1.8;
   margin-top: 1rem;
@@ -80,7 +80,7 @@
 
 /* Left Content Styling */
 .leftContent {
-  background: linear-gradient(135deg, #ffffff, #f9f9f9);
+  background: var(--project-card-color);
   border: 1px solid #ccc;
   padding: 2rem;
   border-radius: 12px;
@@ -110,18 +110,18 @@
 .contact-item-title {
   font-size: 1.2rem;
   font-weight: bold;
-  color: #333;
+  color: var(--text-color);
   margin-bottom: 0.5rem;
 }
 
 .contact-info {
   font-size: 1rem;
-  color: #555;
+  color: var(--text-color);
 }
 
 /* Right Content Styling */
 .rightContact {
-  background: linear-gradient(135deg, #f5f5f5, #ffffff);
+  background: linear-gradient(135deg, var(--project-card-tools-hover) ,var(--project-card-color));
   border: 1px solid #ccc;
   padding: 2rem;
   border-radius: 12px;
@@ -141,7 +141,7 @@
 
 .contact-form .form-label {
   font-size: 1rem;
-  color: #555;
+  color: var(--text-color);
   margin-bottom: 0.5rem;
   display: block;
   font-weight: bold;
@@ -149,15 +149,6 @@
 
 .input-wrapper {
   position: relative;
-}
-
-.input-wrapper ion-icon {
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 1.5rem;
-  color: #888;
 }
 
 textarea.input-field {
@@ -185,7 +176,7 @@ textarea.input-field {
   top: 50%;
   transform: translateY(-50%);
   font-size: 1.5rem;
-  color: #888;
+  color: var(--text-color);
 }
 
 .input-wrapper input {
@@ -194,8 +185,8 @@ textarea.input-field {
   font-size: 1rem;
   border: 2px solid #ccc;
   border-radius: 8px;
-  background: #f9f9f9;
-  color: #555;
+  background: var(--input-box-color);
+  color: var(--text-color);
   transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
@@ -203,23 +194,23 @@ textarea.input-field {
   outline: none;
   border-color: #007bff;
   box-shadow: 0 0 8px rgba(0, 123, 255, 0.6);
-  background-color: #ffffff;
+  background-color: var(--bg-color);
 }
 
 .input-wrapper input::placeholder {
-  color: #888;
+  color: var(--text-color);
   opacity: 1;
 }
 
 .input-wrapper input:hover {
   border-color: #007bff;
-  background-color: #fafafa;
+  background-color: var(--bg-color);
 }
 
 .input-wrapper input:disabled {
-  background-color: #f1f1f1;
-  border-color: #ddd;
-  color: #888;
+  background-color:var(--bg-color);
+  border-color: var(--bg-color);
+  color: var(--text-color);
 }
 
 .input-wrapper textarea {
@@ -228,8 +219,8 @@ textarea.input-field {
   font-size: 1rem;
   border: 2px solid #ccc;
   border-radius: 8px;
-  background: #f9f9f9;
-  color: #555;
+  background: var(--input-box-color);
+  color: var(--text-color);
   transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
@@ -237,23 +228,23 @@ textarea.input-field {
   outline: none;
   border-color: #007bff;
   box-shadow: 0 0 8px rgba(0, 123, 255, 0.6);
-  background-color: #ffffff;
+  background-color: var(--bg-color);;
 }
 
 .input-wrapper textarea::placeholder {
-  color: #888;
+  color: var(--text-color);
   opacity: 1;
 }
 
 .input-wrapper textarea:hover {
   border-color: #007bff;
-  background-color: #fafafa;
+  background-color: var(--bg-color);
 }
 
 .input-wrapper textarea:disabled {
-  background-color: #f1f1f1;
-  border-color: #ddd;
-  color: #888;
+  background-color:var(--bg-color);
+  border-color: var(--bg-color);
+  color: var(--text-color);
 }
 
 /* Button Dynamic Color Change */
@@ -279,7 +270,7 @@ textarea.input-field {
 
 .suggestion-text {
   font-size: 0.8rem;
-  color: #888;
+  color: var(--text-color);
   margin-top: 0.3rem;
   display: block;
   animation: fadeIn 1.5s ease-in-out;

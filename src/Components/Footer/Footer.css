@@ -1,7 +1,7 @@
 /* Footer Styling */
 .footer {
     background-color: rgba(241, 130, 241, 0.21); /* Purple background with opacity */
-    color: #000; /* White text */
+    color: var(--text-color);; /* White text */
     text-align: center;
     padding: 1rem 0;
     font-size: 1rem;

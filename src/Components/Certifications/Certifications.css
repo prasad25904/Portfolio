@@ -6,7 +6,7 @@
   .certifications h2 {
     font-size: 2.5rem;
     font-weight: bold;
-    color: #333;
+    color: var(--text-color);
     text-align: center;
     position: relative;
     animation: fadeInDown 1s ease-in-out;
@@ -34,7 +34,7 @@
   .certificate-card {
     width: 350px;
     height: 250px;
-    background-color: #f1f1f1;
+    background-color: var(--project-card-color);
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     border: 1px solid black;
@@ -56,8 +56,8 @@
   .certificate-card h3 {
     padding: 10px;
     font-size: 1rem;
-    color: #333;
-    background-color: #fff;
+    color: var(--text-color);
+    background-color: var(--project-card-color);
     margin: 0;
   }
   
@@ -75,7 +75,7 @@
   }
   
   .modal-content {
-    background-color: white;
+    background-color: var(--bg-color);
     padding: 20px;
     border-radius: 10px;
     text-align: center;
@@ -90,7 +90,7 @@
   .modal-content h3 {
     margin-top: 15px;
     font-size: 1.5rem;
-    color: #333;
+    color: var(--text-color);
   }
   
   .close-btn {
@@ -118,7 +118,7 @@
       .certificate-card {
         width: 220px;
         height: 180px;
-        background-color: #f1f1f1;
+        background-color: var(--bg-color);
         border-radius: 10px;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         cursor: pointer;

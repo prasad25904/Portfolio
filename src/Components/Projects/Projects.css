@@ -1,7 +1,7 @@
 /* Project Section */
 .projects {
   padding: 2rem 1rem;
-  background-color: #f9f9f9;
+  background-color: var(--bg-color);
   text-align: center;
 }
 
@@ -9,7 +9,7 @@
 .projectTitle {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #333;
+  color: var(--text-color);
   text-align: center;
   position: relative;
   animation: fadeInDown 1s ease-in-out;
@@ -36,17 +36,14 @@
   position: relative;
 }
 
-.search-container input {
-  color:  rgb(0, 0, 0);
-}
-
 .search-box {
   width: 80%;
   max-width: 400px;
   padding: 10px 15px;
   font-size: 16px;
-  background-color:  rgba(237, 237, 237, 0.5);
-  border: 1px solid rgba(0, 0, 0, 0.5);
+  color: var(--text-color);
+  background-color:  var(--input-box-color);
+  border: 1px solid var(--text-color);
   border-radius: 5px;
   outline: none;
   transition: all 0.3s;
@@ -59,7 +56,7 @@
 
 .no-results {
   font-size: 1rem;
-  color: #888;
+  color: var(--text-color);
   margin-top: 20px;
   font-style: italic;
 }
@@ -73,7 +70,7 @@
 }
 
 .project-card {
-  background: #fff;
+  background: var(--project-card-color);
   border: 1px solid #ddd;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -97,7 +94,7 @@
 }
 
 .project-card:hover .project-tools {
-  background: #f0e5ff;
+  background: var(--project-card-tools-hover);
 }
 
 .project-image {
@@ -115,29 +112,29 @@
 .project-title {
   font-size: 1.4rem;
   margin: 1rem 0 0.5rem;
-  color: #333;
+  color: var(--text-color);
   transition: color 0.3s;
 }
 
 .project-description {
   font-size: 0.95rem;
   margin: 0 1rem 1rem;
-  color: #666;
+  color: var(--text-color);
   text-align: justify;
 }
 
 .project-tools {
   font-size: 0.85rem;
   margin: 0 1rem 1rem;
-  color: #555;
+  color: var(--text-color);
   padding: 0.5rem;
-  background: #f8f8f8;
+  background: var(--project-tool-bg);
   border-radius: 4px;
   transition: background 0.3s;
 }
 
 .project-tools strong {
-  color: #333;
+  color: var(--text-color);;
 }
 
 /* Animations */

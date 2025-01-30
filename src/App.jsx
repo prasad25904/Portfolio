@@ -10,10 +10,12 @@ import Footer from './Components/Footer/Footer';
 import Certifications from './Components/Certifications/Certifications';
 import LightDark from "./Components/Toggle/LightDark";
 
+
 const App = () => {
   return (
-    <div>
+    <div className='app'>
       <Navbar />
+      <LightDark />
       <Sidebar /> {/* Add Sidebar component here */}
       {/* Sections */}
       <div id="hero">

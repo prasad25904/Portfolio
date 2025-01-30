@@ -27,12 +27,12 @@ const Navbar = () => {
         <FontAwesomeIcon icon={isMenuOpen ? faTimes : faBars} className="icon" />
       </button>
       <ul className={`navbar-items ${isMenuOpen ? 'open' : ''}`}>
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#about" onClick={() => setMenuOpen(false)}>About Me</a></li>
-        <li><a href="#skills" onClick={() => setMenuOpen(false)}>Skills & Tools</a></li>
-        <li><a href="#projects" onClick={() => setMenuOpen(false)}>Projects</a></li>
-        <li><a href="#certificates" onClick={() => setMenuOpen(false)}>Certifications</a></li>
-        <li><a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a></li>
+        <li><a href="#hero" className='menuList'>Home</a></li>
+        <li><a href="#about" className='menuList' onClick={() => setMenuOpen(false)}>About Me</a></li>
+        <li><a href="#skills" className='menuList' onClick={() => setMenuOpen(false)}>Skills & Tools</a></li>
+        <li><a href="#projects" className='menuList' onClick={() => setMenuOpen(false)}>Projects</a></li>
+        <li><a href="#certificates" className='menuList' onClick={() => setMenuOpen(false)}>Certifications</a></li>
+        <li><a href="#contact" className='menuList' onClick={() => setMenuOpen(false)}>Contact</a></li>
       </ul>
     </nav>
   );

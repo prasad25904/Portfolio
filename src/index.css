@@ -7,17 +7,28 @@
   color: rgba(0, 0, 0, 0.87);
   background-color: rgb(255, 255, 255);
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+ 
   --bg-color: white;
   --text-color: black;
-  --button-bg-color: #f9f9f9;
-  --icon-color: orange;
+  --button-bg-color:rgb(229, 200, 255);
+  --background-shadow:  rgba(0, 0, 0, 0.36);
   --button-bg-image: url('day.png');
-  --navbar-color: rgba(215, 239, 255, 0.86);
-  --navbar-text-color: #000;
+
+  --navbar-color: rgba(157, 232, 245, 0.71);
+  --navbar-text-hover: rgb(242, 234, 83);
+  --navbar-background-color: rgba(168, 215, 211, 0.7);
+
+  --sidebar-background: rgba(58, 58, 58, 0.32);  
+  --sidebar-background-open: rgba(47, 46, 46, 0.63);
+
+  --about-bg-c1: rgba(109, 170, 235, 0.66);
+  --about-bg-c2: rgba(227, 143, 244, 0.65);
+  --about-bg-c3: rgba(132, 248, 188, 0.65);
+
+  --input-box-color: rgba(237, 237, 237, 0.5);
+  --project-card-color: white;
+  --project-card-tools-hover:  #f0e5ff;
+  --project-tool-bg: rgba(246, 246, 246, 0.5);
 }
 
 a {
@@ -34,6 +45,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
   display: block; /* Ensures no unwanted flex behavior */
+  background-color: var(--bg-color);
 }
 
 h1 {
@@ -58,19 +70,6 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
 }
 
 * {
