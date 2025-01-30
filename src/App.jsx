@@ -8,6 +8,7 @@ import Contact from './Components/Contact/Contact';
 import Sidebar from './Components/sidebar/sidebar'; // Import Sidebar
 import Footer from './Components/Footer/Footer';
 import Certifications from './Components/Certifications/Certifications';
+import LightDark from "./Components/Toggle/LightDark";
 
 const App = () => {
   return (
