@@ -1,23 +1,55 @@
 /* Footer Styling */
 .footer {
-    background-color: rgba(241, 130, 241, 0.21); /* Purple background with opacity */
-    color: var(--text-color);; /* White text */
-    text-align: center;
-    padding: 1rem 0;
-    font-size: 1rem;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    height: 30px;
-  }
-  
-  .footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .footer-text strong {
-    color:rgb(162, 0, 255); /* Gold color for developer name */
-    font-weight: bold;
-  }
-  
+  background-color: rgba(241, 130, 241, 0.21); /* Purple background with opacity */
+  color: var(--text-color); /* White text */
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 1rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-text strong {
+  color:rgb(162, 0, 255); /* Gold color for developer name */
+  font-weight: bold;
+}
+
+.footer-links {
+  display: flex;
+  gap: 15px;
+  margin: 10px 0;
+}
+
+.footer-links a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-links a:hover {
+  color: var(--text-color);
+  text-decoration: underline;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-socials a {
+  color: var(--text-color);
+  font-size: 1.5rem;
+}
+
+.footer-socials a:hover {
+  color: rgb(162, 0, 255);
+}
