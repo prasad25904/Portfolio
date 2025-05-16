@@ -2,12 +2,19 @@ import React, { useState } from 'react';
 import './Projects.css';
 
 // Import images
+import ast1 from './../../assets/projectsImg/ast1.webp'
 import wingtipsImg from './../../assets/projectsImg/Wingtips.webp';
 import movieBookingImg from './../../assets/projectsImg/movie_booking_system.webp';
 import atomsAndCompoundsImg from './../../assets/projectsImg/atoms_and_compounds.webp';
 import hospitalPrioritizationImg from './../../assets/projectsImg/hospital_prioritization.webp';
 
 const projectsData = [
+  {
+    title: "JavaScript Code Analyzer",
+    image: ast1,
+    description:"A lightweight JavaScript static code analyzer built using Flex and Bison, capable of generating an Abstract Syntax Tree (AST), building a Symbol Table, and performing Semantic Analysis.",
+    tools: ["C/C++ Compiler","Flex","Bison","Graphviz"],
+  },
   {
     title: "WingTips - User Guide for Air Travel",
     image: wingtipsImg,

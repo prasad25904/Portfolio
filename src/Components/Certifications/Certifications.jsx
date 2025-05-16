@@ -6,6 +6,9 @@ import  DeepLearning from './../../assets/certificates/CertificateNvdiaDeepLearn
 import  ToolsForDs from './../../assets/certificates/ToolsForDS.webp';
 import  DataScienceMethodology from './../../assets/certificates/DataScienceMethodology.webp';
 import  Devops1 from './../../assets/certificates/Devops1.webp';
+import IBM_DevOps_and_Software from './../../assets/certificates/IBM DevOps and Software.webp'
+import IBM_Data_Science from './../../assets/certificates/IBM Data Science(Final).webp'
+import Google_Data_Analytics from './../../assets/certificates/Google Data Analytics.webp'
 
 
 const Certifications = () => {
@@ -19,8 +22,8 @@ const Certifications = () => {
     },
     {
       id: 2,
-      title: 'Coursera- What is Data Science?',
-      imageUrl: DataScience,
+      title: 'Coursera - IBM DevOps and Software',
+      imageUrl: IBM_DevOps_and_Software,
     },
     {
       id: 3,
@@ -29,19 +32,15 @@ const Certifications = () => {
     },
     {
       id: 4,
-      title: 'Tools for Data Science',
-      imageUrl: ToolsForDs,
+      title: 'IBM Data Science',
+      imageUrl: IBM_Data_Science,
     },
     {
       id: 5,
-      title: 'Data Science Methodology',
-      imageUrl: DataScienceMethodology,
+      title: 'Google Data Analytics',
+      imageUrl: Google_Data_Analytics,
     },
-    {
-      id: 6,
-      title: 'Introduction to DevOps',
-      imageUrl: Devops1,
-    },
+    
     
   ];
 
